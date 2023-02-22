@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Rating App</title>
 </head>
+
 <body>
   <div id="app">
-    <div class="rating-container">
+    <div id="rating-container">
       <div class="logo">
         <img src="/images/icon-star.svg" alt="">
       </div>
@@ -19,23 +22,25 @@
           offering!</p>
       </section>
       <div class="nums">
-        <div class="num">1</div>
-        <div class="num">2</div>
-        <div class="num">3</div>
-        <div class="num">4</div>
-        <div class="num">5</div>
+        <div class="num" data-rating="1">1</div>
+        <div class="num" data-rating="2">2</div>
+        <div class="num" data-rating="3">3</div>
+        <div class="num" data-rating="4">4</div>
+        <div class="num" data-rating="5">5</div>
       </div>
-      <button>Submit</button>
-      <div class="thank-you">
-        <img src="public/images/illustration-thank-you.svg" alt="">
-        <p>`You selected ${rate} out of 5`</p>
+      <button id="submit">Submit</button>
+    </div>
+    <div id="thankyou-container">
+      <div class="top"><img src="public/images/illustration-thank-you.svg" alt="">
+        <p class="results"></p>
       </div>
       <section>
         <h1>Thank you!</h1>
-        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesiste to get in touch!</p>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesiste to get in
+          touch!</p>
       </section>
     </div>
-  </div>
-  <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.js"></script>
 </body>
+
 </html>
