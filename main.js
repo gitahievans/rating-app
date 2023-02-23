@@ -1,10 +1,16 @@
+document.addEventListener("DOMContentLoaded", () => {
 const ratingState = document.querySelector("#rating-container");
 const thankyouState = document.querySelector("#thankyou-container");
 const submitButton = document.querySelector("#submit");
 const rateValues = document.querySelectorAll(".num");
 const ratingResult = document.querySelector(".results");
 
-let rating;
+window.addEventListener('load', function () {
+  thankyouState.style.display = "none";
+  ratingState.style.display = "block";
+})
+
+let rating = null;
 
 const setRating = () => {
   rateValues.forEach((num) => {
@@ -29,3 +35,4 @@ const submitRating = () => {
   });
 };
 submitRating();
+});
