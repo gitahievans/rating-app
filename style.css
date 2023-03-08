@@ -299,6 +299,7 @@
 @media screen and (min-width: 1440px) {
   .mini {
     width: 25%;
+    height: 50%;
     margin: 0 35%;
     border-radius: 2rem;
     padding: 0% 2%;
@@ -345,6 +346,7 @@
 
   .thankyou {
     width: 25%;
+    height: 50%;
     margin: 0 35%;
     border-radius: 2rem;
     padding: 0% 2%;
@@ -364,12 +366,13 @@
     margin-top: -19%;
   }
 
-  .top{
+  .top {
     /* background-color: aliceblue; */
     height: 45%;
     margin-top: 4.5%;
   }
-  .top img{
+
+  .top img {
     height: 55%;
     margin-top: 5%;
   }
