@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ratingResult.textContent = `You selected ${rating} out of 5`;
       }
        gsap.from(thankNote, { duration: 2, opacity: 0, y: 150 });
-       gsap.from(".top img", { duration: 3, opacity: 0, y: -150, rotateX: 360, ease: "easeInEaseOut", delay: 2.5});
+       gsap.from(".top img", { duration: 3, opacity: 0, y: -150, rotateX: 360, x: 150, ease: "easeInEaseOut", delay: 2.5});
        gsap.from(".results", { duration: 3, z: 150, opacity: 0})
        gsap.from(".thankyou section h1", { duration: 2, rotateY: 360, x: 350, opacity: 0, ease: "easeOut"})
     });
